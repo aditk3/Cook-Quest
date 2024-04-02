@@ -1,0 +1,44 @@
+.cookQuestLogo {
+    width: "58.175px";
+    height: "50px";
+    flex-shrink: "0"
+}
+
+.logout-btn {
+    margin-bottom: 8px;
+    color: $brown;
+    border: solid 1px $brown;
+
+    &:hover {
+        color: white;
+        background-color: $brown;
+        border: solid 1px $brown;
+    }
+}
+
+// .navbar-toggler {
+//     &:hover{
+//         color: red;
+//     }
+// }
+
+.cookQuestFont {
+    width: 58.175px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #4C230A;
+    text-align: center;
+    font-family: "Oregano", cursive;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 10px;
+}
+
+.container-fluid {
+    background-color: $lightBg;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
+}

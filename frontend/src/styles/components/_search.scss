@@ -1,0 +1,13 @@
+#search-subtitle {
+    color: $lightText;
+    font-size: 1.5rem;
+}
+
+#toggle-switch {
+    background-color: white;
+
+    .btn.btn-inactive {
+        background-color: white;
+        border-color: white;
+    }
+}

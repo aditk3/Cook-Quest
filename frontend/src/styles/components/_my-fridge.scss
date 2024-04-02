@@ -1,0 +1,100 @@
+$myFridgeSubheadingFont: 27px;
+$myFridgeSuper-headingFont: 21px;
+$myFridgeSuper-headingFontColor: var(--palatte-gray-dark, #9DA5C1);
+$modernFont : Ubuntu;
+
+.table-striped {
+    >thead>tr:nth-child(odd)>th {
+        background-color: $lightBg;
+    }
+
+    // >tfoot>tr:nth-child(odd)>th {
+    //     background-color: $darkBg;
+    // }
+
+    >tbody {
+        >tr:nth-child(even)>td {
+            background-color: $lightBg;
+        }
+
+        >tr:nth-child(odd)>td {
+            background-color: $darkBg;
+        }
+    }
+
+}
+
+
+.page-link {
+    // background-color: $greenText;
+    // color: white;
+
+    background-color: $green;
+    color: white;
+
+    
+
+    &:hover,
+    &:disabled {
+        // background-color: $darkBg;
+        // color: $greenText;
+        background-color: whitesmoke;
+        color: black;
+    }
+
+    ;
+    //focus
+    --bs-pagination-focus-bg: $greenText; //works with normal color vars
+    --bs-pagination-focus-color: $green;
+    --bs-pagination-focus-box-shadow: 0 0 0 0;
+    //active
+    // --bs-pagination-active-bg: $lightBg;
+    // &.arrowBtn:active:focus, .arrowBtn:active:focus{
+    //     background-color: $greenText;
+    //     color: white;
+    // }
+
+}
+
+
+.subheading {
+    font-family: $modernFont;
+    font-size: $myFridgeSubheadingFont;
+}
+
+.super-subheading {
+    font-size: $myFridgeSuper-headingFont;
+    font-family: $modernFont;
+    color: $myFridgeSuper-headingFontColor;
+
+}
+
+// #my-fridge-title,
+#add-ingredient-modal {
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    font-size: 70px;
+}
+// #my-fridge-title {
+
+//     font-size: 60px;
+// }
+
+#add-ingr-btn {
+    font-size: 20px;
+}
+
+.ingredient-modal-icon {
+    width: 165px;
+    height: 172px;
+}
+
+#add-ingr-text {
+    color: white;
+    font-size: 14px;
+}

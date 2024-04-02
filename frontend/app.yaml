@@ -1,0 +1,12 @@
+service: cook-quest
+runtime: python27
+threadsafe: true
+handlers:
+  - url: /static
+    static_dir: build/static
+  - url: /(.*\.(json|ico|js|png|jpg|svg))$
+    static_files: build/\1
+    upload: build/.*\.(json|ico|js|png|jpg|svg)$
+  - url: .*
+    static_files: build/index.html
+    upload: build/index.html

@@ -1,0 +1,68 @@
+$cardColor: #FFFFFF;
+$btnColor: #3C3C43;
+$lineColor: #C4C4C4;
+$titleSize: 20px;
+$textSize: 14px;
+
+#card {
+    background-color: $cardColor;
+}
+
+#footer {
+    background-color: $cardColor;
+    border-top-width: 2px;
+    border-top-color: $lineColor;
+}
+
+#cardImg {
+    position: relative;
+    height: 0;
+    padding-top: 66.6666%;
+    overflow: hidden;
+}
+
+#cardImg img {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+#title {
+    font-size: $titleSize;
+}
+
+#title:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#cookTime {
+    font-size: $textSize;
+}
+
+#invisibleCheck {
+    display: none;
+}
+
+#icon {
+    color: red;
+}
+
+.closedDesc {
+    white-space: pre-wrap;
+    font-size: $textSize;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.openDesc {
+    white-space: pre-wrap;
+    font-size: $textSize;
+    overflow-wrap: break-word;
+}

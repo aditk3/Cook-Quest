@@ -1,0 +1,6 @@
+runtime: java17
+#service: developer-spring-api
+service: cook-quest-recipe
+handlers:
+  - url: /.*
+    script: this field is required, but ignored

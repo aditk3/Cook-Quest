@@ -1,0 +1,12 @@
+steps:
+  - name: gradle:8.2.1-jdk17
+    args: [ 'gradle','build' ]
+  - name: "gcr.io/cloud-builders/gcloud"
+    entrypoint: bash
+    args:
+      - "-c"
+      - |
+        gcloud app deploy ./build/libs/recipe-0.0.1-SNAPSHOT.jar --appyaml=app.yaml
+timeout: "3600s"
+options:
+  logging: CLOUD_LOGGING_ONLY

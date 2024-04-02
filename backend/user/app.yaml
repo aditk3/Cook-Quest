@@ -1,0 +1,5 @@
+runtime: java17
+service: cook-quest-user
+handlers:
+  - url: /.*
+    script: this field is required, but ignored
